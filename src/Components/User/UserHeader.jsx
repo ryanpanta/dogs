@@ -4,8 +4,10 @@ import styles from './UserHeader.module.css'
 import { useLocation } from 'react-router-dom';
 
 function UserHeader() {
+    
     const [title, setTitle] = React.useState('');
     const location = useLocation()
+    
     React.useEffect(() => {
         const {pathname} = location;
         switch(pathname) {
