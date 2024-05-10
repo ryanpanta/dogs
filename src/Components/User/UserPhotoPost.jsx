@@ -55,7 +55,7 @@ function UserPhotoPost() {
           id="img"
           onChange={handleImageChange}
         />
-        {loading ? <Button disbled >Enviando...</Button> : <Button>Enviar</Button>}
+        {loading ? <Button disabled >Enviando...</Button> : <Button>Enviar</Button>}
         <Error error={error}/>
         
       </form>
