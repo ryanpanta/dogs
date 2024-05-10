@@ -13,15 +13,15 @@ function PhotoDelete({ id }) {
         }
     }
     return (
-        <div>
+        <>
             {loading ? (
-                <button disabled>Deletando...</button>
+                <button disabled className={styles.delete}>Deletando...</button>
             ) : (
                 <button onClick={handleClick} className={styles.delete}>
                     Deletar
                 </button>
             )}
-        </div>
+        </>
     );
 }
 
