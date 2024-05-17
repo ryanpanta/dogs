@@ -3,6 +3,7 @@
 
 * {
   box-sizing: border-box;
+  
 }
 
 body {
@@ -12,6 +13,7 @@ body {
   --type-first: Helvetica, Arial, sans-serif;
   --type-second: 'Spectral', Georgia;
   font-family: var(--type-first);
+  
 }
 
 h1, h2, h3, h4, p {
@@ -41,10 +43,21 @@ button, input {
   color: #333;
 }
 
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.AppBody {
+  flex: 1;
+}
+
 .container {
   max-width: 50rem;
   padding: 0 1rem;
   margin: 0 auto;
+  
 }
 
 .mainContainer {

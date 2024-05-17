@@ -7,6 +7,7 @@ import { TOKEN_POST, USER_GET } from "../../api";
 import Error from "../Helper/Error";
 import styles from "./LoginForm.module.css";
 import stylesBtn from "../Forms/Button.module.css";
+import Head from "../Helper/Head";
 
 import { UserContext } from "../../UserContext";
 
@@ -25,6 +26,7 @@ function LoginForm() {
 
     return (
         <section className="animeLeft">
+            <Head title="Login" />
             <h1 className="title">Login</h1>
             <form className={styles.form} onSubmit={handleSubmit}>
                 <Input
@@ -52,7 +54,7 @@ function LoginForm() {
             </Link>
             <div className={styles.cadastro}>
                 <h2 className={styles.subtitle}>Cadastre-se</h2>
-                <p >Ainda não possui uma conta? Cadastre-se no site.</p>
+                <p>Ainda não possui uma conta? Cadastre-se no site.</p>
                 <Link className={stylesBtn.button} to="/login/criar">
                     Cadastro
                 </Link>

@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import Head from "../Helper/Head";
+import useFetch from './../../Hooks/useFetch';
 
 function UserStats() {
-  return (
-    <div>Estatisticas</div>
-  )
+    const {data, error, loading, request} = useFetch();
+    
+    return (
+        <div>
+            <Head title="Estatísticas" />
+        </div>
+    );
 }
 
-export default UserStats
+export default UserStats;
